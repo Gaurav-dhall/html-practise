@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This webpage is just to practise the key concepts of semantic tags explained by harry sir from the channel code with harry">
+    <title>Semantic tags-practise</title>
+</head>
+<body>
+   <header>
+    <h1>Lorem, ipsum.</h1>
+   </header> 
+   <nav>Lorem ipsum dolor sit amet consectetur.</nav>
+   <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, vero. Asperiores porro eius expedita odit laboriosam soluta magni omnis eum.</aside>
+
+   <main>
+    <article>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eius consequatur quia, esse rem, aut culpa voluptate impedit nihil repellendus, suscipit omnis non. Quo magni accusantium delectus harum. Quam cupiditate accusamus voluptatem laborum nobis aliquam excepturi dolorum recusandae sit nihil reprehenderit dicta quis vitae officia, iusto iure labore! Possimus neque saepe consequatur id, nihil labore. Architecto fugiat iusto, quidem repudiandae quas rem temporibus corporis accusamus, hic vel magnam error maiores cum? Aliquam saepe inventore non doloribus suscipit voluptas voluptatibus reiciendis harum totam, ipsam a excepturi esse sequi. Perferendis quod quibusdam, beatae quas, odit nihil vitae a quae officiis provident fuga.</p>
+        <figure><img src="5-root 3.jpg" height="150"alt="thumbnail youtube"></figure>
+        <figcaption>this is an image copied from youtube channel galileo classes from youtube </figcaption>
+        <section>gaurav is owner of galileo classes</section>
+    </article>
+
+   </main>
+   <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nobis est repudiandae, fugiat eaque ea iste perferendis soluta nulla omnis impedit ipsa quis consequuntur amet.</footer>
+
+   <code><pre>
+    import java.util.*;
+
+public class dupli {
+    public static boolean[] arr=new boolean[26];
+
+    public static void removeDupli(String str,int i,String news){
+        if(i==str.length()){
+            System.out.print(news);
+            return;
+        }
+            if(arr[str.charAt(i)-'a']==true){
+                removeDupli(str, i+1, news);
+
+            }else{
+                news+=str.charAt(i);
+                arr[str.charAt(i)-'a']=true;
+                removeDupli(str, i+1, news);
+            }
+    }
+    public static void main(String[] args) {
+        System.out.print("Enter the string:- ");
+        Scanner sc= new Scanner(System.in);
+        String str=sc.next();
+        System.out.print("New string after removal of duplicate charachter is ");
+        removeDupli(str,0, "");
+        
+    }
+}
+</pre>
+   </code>
+</body>
+</html>
